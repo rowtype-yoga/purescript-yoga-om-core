@@ -74,6 +74,66 @@
             {
               "variant": ">=8.0.0 <9.0.0"
             }
+          ],
+          "build_plan": [
+            "aff",
+            "ansi",
+            "arrays",
+            "avar",
+            "bifunctors",
+            "catenable-lists",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "distributive",
+            "effect",
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "foldable-traversable",
+            "fork",
+            "free",
+            "functions",
+            "functors",
+            "gen",
+            "heterogeneous",
+            "identity",
+            "integers",
+            "invariant",
+            "lazy",
+            "lists",
+            "maybe",
+            "mmorph",
+            "newtype",
+            "nonempty",
+            "now",
+            "numbers",
+            "ordered-collections",
+            "orders",
+            "parallel",
+            "partial",
+            "pipes",
+            "prelude",
+            "profunctor",
+            "record",
+            "record-studio",
+            "refs",
+            "safe-coerce",
+            "spec",
+            "st",
+            "strings",
+            "tailrec",
+            "transformers",
+            "tuples",
+            "type-equality",
+            "typelevel-prelude",
+            "uncurried-transformers",
+            "unfoldable",
+            "unsafe-coerce",
+            "variant"
           ]
         },
         "test": {
@@ -81,7 +141,8 @@
             {
               "spec": ">=7.0.0 <8.0.0"
             }
-          ]
+          ],
+          "build_plan": []
         }
       }
     },
@@ -590,17 +651,20 @@
       "version": "7.1.0",
       "integrity": "sha256-/nOpDQVnKIoP1pQ1ZZBYpadK0TuMlG4WwufGzJpsfD0=",
       "dependencies": [
+        "arrays",
+        "bifunctors",
         "control",
         "datetime",
         "effect",
         "either",
         "exceptions",
+        "foldable-traversable",
         "functions",
+        "maybe",
         "newtype",
         "parallel",
-        "partial",
         "prelude",
-        "st",
+        "refs",
         "tailrec",
         "transformers",
         "unsafe-coerce"
@@ -613,7 +677,7 @@
       "dependencies": [
         "foldable-traversable",
         "lists",
-        "prelude"
+        "strings"
       ]
     },
     "arrays": {
@@ -647,8 +711,7 @@
         "either",
         "exceptions",
         "functions",
-        "maybe",
-        "prelude"
+        "maybe"
       ]
     },
     "bifunctors": {
@@ -830,9 +893,7 @@
       "version": "6.0.0",
       "integrity": "sha256-0keBVeZZg1eCZEy/En1CohVW829gQUqKtqBNIRa93/A=",
       "dependencies": [
-        "aff",
-        "prelude",
-        "transformers"
+        "aff"
       ]
     },
     "free": {
@@ -991,16 +1052,9 @@
       "version": "7.0.0",
       "integrity": "sha256-Cfltaq+tfYjuSoSBN/b8cSQZbvZTqIRs6ebQewbIkGs=",
       "dependencies": [
-        "bifunctors",
-        "either",
         "free",
         "functors",
-        "identity",
-        "maybe",
-        "newtype",
-        "prelude",
-        "transformers",
-        "tuples"
+        "transformers"
       ]
     },
     "newtype": {
@@ -1031,8 +1085,7 @@
       "integrity": "sha256-mTyG4s8tps3XIf0jjV/lME2/QlwMzrQly2wqfSSUM3o=",
       "dependencies": [
         "datetime",
-        "effect",
-        "prelude"
+        "effect"
       ]
     },
     "numbers": {
@@ -1041,8 +1094,7 @@
       "integrity": "sha256-ZydYckgwRAnRaFC7pu6fADhzdwX+UqHZrfJyet64zls=",
       "dependencies": [
         "functions",
-        "maybe",
-        "prelude"
+        "maybe"
       ]
     },
     "ordered-collections": {
@@ -1051,16 +1103,13 @@
       "integrity": "sha256-NaEXc2cz/7lJfxPWEja4XlZbGxuRqJwFKQJjsJf51kQ=",
       "dependencies": [
         "arrays",
-        "control",
         "foldable-traversable",
-        "functions",
         "gen",
         "lists",
         "maybe",
-        "newtype",
         "partial",
         "prelude",
-        "safe-coerce",
+        "st",
         "tailrec",
         "tuples",
         "unfoldable"
@@ -1105,15 +1154,8 @@
       "integrity": "sha256-dtUNpG8BGVr7pu6mQZyAnUAftUHgNS7f0QH3Kw5UTpQ=",
       "dependencies": [
         "aff",
-        "control",
-        "effect",
-        "either",
-        "foldable-traversable",
-        "identity",
         "lists",
-        "maybe",
         "mmorph",
-        "newtype",
         "prelude",
         "tailrec",
         "transformers",
@@ -1220,7 +1262,6 @@
       "version": "6.2.0",
       "integrity": "sha256-WI4MEkkwUd4pnwZQ3G8VKWgX5t1RSNJludm5e9boaRo=",
       "dependencies": [
-        "effect",
         "partial",
         "prelude",
         "tailrec",
@@ -1351,14 +1392,13 @@
       "version": "8.0.0",
       "integrity": "sha256-Ydrgl8liWEwYQOWW76PdZtg3vxKpoKgsnmFyTLgZkoU=",
       "dependencies": [
-        "control",
         "enums",
-        "foldable-traversable",
         "lists",
         "maybe",
         "partial",
         "prelude",
-        "type-equality",
+        "record",
+        "tuples",
         "unsafe-coerce"
       ]
     }
